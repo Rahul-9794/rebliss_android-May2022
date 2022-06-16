@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true">
+        <color android:color="@color/link_color" />
+    </item>
+    <!-- checked -->
+    <item
+        android:state_checked="false">
+        <color android:color="@color/colorBlack"></color>
+    </item>
+    <!-- unchecked -->
+    <item
+        android:state_focused="true">
+        <color android:color="@color/link_color"></color>
+    </item>
+    <!-- on focus -->
+    <item >
+        <color android:color="@color/colorBlack"></color>
+    </item>
+    <!-- default -->
+</selector>

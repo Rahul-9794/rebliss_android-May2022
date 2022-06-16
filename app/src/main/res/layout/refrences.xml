@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRefrencesList"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    style="@style/BackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRefrenceList"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/etNameRef1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:inputType="text"
+        android:background="@drawable/borderwithaasmani"
+        android:hint=" Name *"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13sdp" />
+
+    <EditText
+        android:id="@+id/etPhoneRef1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/borderwithaasmani"
+        android:hint=" Mobile No. *"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13sdp" />
+
+    <Spinner
+        android:id="@+id/spCategoryRefrence1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:background="@drawable/borderwithaasmani"
+        android:paddingLeft="2dp" />
+
+    <EditText
+        android:id="@+id/etPincode1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:background="@drawable/borderwithaasmani"
+        android:hint=" Pincode *"
+        android:inputType="number"
+        android:maxLength="6"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_13sdp" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+   style="@style/ButtonShapeBackground"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:text="save and continue"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:id="@+id/btnNextRef1"/>
+
+
+
+
+</LinearLayout>

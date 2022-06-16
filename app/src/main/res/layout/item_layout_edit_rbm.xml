@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    cardView:cardCornerRadius="8dp"
+    cardView:cardElevation="8dp"
+    android:layout_margin="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:background="@drawable/borderwith_light_white_noradii">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1.1"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       android:text="Activity Type"/>
+                   <TextView
+                       android:id="@+id/txtEditActivityTypes"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight=".9"
+                       android:gravity="left"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       />
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1.1"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       android:text="Activity Photo"/>
+                   <TextView
+                       android:id="@+id/txtEditActivityPhotos"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight=".9"
+                       android:gravity="left"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       />
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1.1"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       android:text="Store Id"/>
+                   <TextView
+                       android:id="@+id/txtEditStoreIds"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight=".9"
+                       android:gravity="left"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:id="@+id/txtEditPancardNumbers"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1.1"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       android:text="Pancard Number"/>
+                   <TextView
+                       android:id="@+id/txtEditDocTypes"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight=".9"
+                       android:gravity="left"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       />
+
+               </LinearLayout>
+
+
+
+
+
+
+
+               <LinearLayout
+                   android:id="@+id/llpanphoto"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1.1"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       android:text="Pancard Photo"/>
+                   <TextView
+                       android:id="@+id/txtPancardPhotos"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight=".9"
+                       android:gravity="left"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp" />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:id="@+id/llgstNumber"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1.1"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       android:text="Document Number"/>
+                   <TextView
+                       android:id="@+id/txtEditGSTNumbers"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight=".9"
+                       android:gravity="left"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp" />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:id="@+id/llgstphoto"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1.1"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp"
+                       android:text="Document Photo"/>
+                   <TextView
+                       android:id="@+id/txtEditGSTPhoto"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight=".9"
+                       android:gravity="left"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10sdp" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

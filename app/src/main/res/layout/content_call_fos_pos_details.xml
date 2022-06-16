@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <WebView android:id="@+id/webView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               ></WebView>
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/buttonBar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_30sdp"
+      android:layout_alignParentBottom="true"
+      android:gravity="center"
+      android:background="@color/colorEditText">
+
+    <TextView
+        android:id="@+id/text_accept"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rect_login_button"
+        android:gravity="center"
+        android:text="Accept"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        android:layout_marginRight="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/text_decline"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/text_accept"
+        android:background="@drawable/rectengle_decline"
+        android:gravity="center"
+        android:text="@string/decline"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp" />
+
+  </RelativeLayout>
+</RelativeLayout>

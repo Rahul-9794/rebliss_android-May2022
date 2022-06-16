@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_background"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Name"
+                android:fontFamily="@font/text_fontmontserrat_medium"
+
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/etBankName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/rounded_edittext"
+
+
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:fontFamily="@font/text_fontmontserrat_medium"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/colorEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account No."
+
+                android:fontFamily="@font/text_fontmontserrat_medium"
+
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/etAcNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/text_fontmontserrat_medium"
+                android:singleLine="true"
+
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:visibility="gone"
+                android:background="@color/colorEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IFSC code"
+
+                android:fontFamily="@font/text_fontmontserrat_medium"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/etIFSC"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:fontFamily="@font/text_fontmontserrat_medium"
+                android:paddingBottom="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+
+                android:visibility="gone"
+                android:layout_height="1dp"
+                android:background="@color/colorEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name as per Bank"
+                android:fontFamily="@font/text_fontmontserrat_medium"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/etNameAsBank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:fontFamily="@font/text_fontmontserrat_medium"
+                android:paddingBottom="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:visibility="gone"
+                android:background="@color/colorEditText" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/textCheque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="-2dp"
+                    android:fontFamily="@font/text_fontmontserrat_medium"
+                    android:text="@string/bank_proof"
+                    android:textColor="@color/colorBlack" />
+
+                <RelativeLayout
+                    android:id="@+id/add_firm_cheque_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:background="@drawable/rounded_edittext">
+
+
+                    <ImageView
+                        android:id="@+id/Imcamera06"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        app:srcCompat="@drawable/ic_photo_camera">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/Imattach06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/Imcamera06"
+                        app:srcCompat="@drawable/ic_attached" />
+
+                    <ImageView
+                        android:id="@+id/imgChkBank"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@+id/Imattach06"
+                        android:src="@drawable/ic_check_mark_green"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/upload_done_roundcorner"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/etcheque"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center|left"
+                                android:hint=""
+                                android:inputType="number"
+                                android:maxLength="16"
+                                android:textColor="@color/colorMegentaText"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/click_to_uploadcheque"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/btnUploadCheque"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload file"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/cloud_upload"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                android:background="@color/colorEditText" />
+
+            <TextView
+                android:id="@+id/textCHequeFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_8sdp"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollViewCheque"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_Cheque"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <RelativeLayout
+                android:id="@+id/relCheqlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/bankProofRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textPan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAN No (Optional)"
+                android:fontFamily="@font/text_fontmontserrat_medium"
+                android:textColor="@color/colorBlack" />
+
+            <RelativeLayout
+                android:id="@+id/add_pan_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp">
+
+                        <EditText
+                            android:id="@+id/etPan"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_37sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint=""
+                            android:inputType="textCapCharacters"
+
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorMegentaText"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:id="@+id/imgChkPan"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_toLeftOf="@+id/Imattach02"
+                            android:src="@drawable/ic_check_mark_green" />
+
+                        <ImageView
+                            android:id="@+id/Imcamera02"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/_24sdp"
+                            app:srcCompat="@drawable/ic_photo_camera">
+                            android:scaleType="fitXY"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/Imattach02"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_toLeftOf="@+id/Imcamera02"
+                            app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+
+                        android:visibility="gone"
+                        android:background="@color/colorEditText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/click_to_uploadPan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btnUploadPAN"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Upload file"
+                        android:textAllCaps="false"
+
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textCPPANFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_8sdp"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollViewPAN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_PAN"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <RelativeLayout
+                android:id="@+id/relPanLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pan_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/llGST"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textGST"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GST (Optional)"
+                    android:textColor="@color/colorEditText" />
+
+
+                <RelativeLayout
+
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp">
+
+                    <EditText
+                        android:id="@+id/etGSTnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_31sdp"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/transparent"
+                        android:hint=""
+                        android:maxLength="15"
+                        android:inputType="textCapCharacters"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorMegentaText"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:id="@+id/imgChkGST"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@+id/ImattachGst"
+                        android:src="@drawable/ic_check_mark_green" />
+
+                    <ImageView
+                        android:id="@+id/ImcameraGst"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/ic_photo_camera">
+                        android:scaleType="fitXY"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/ImattachGst"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@+id/ImcameraGst"
+                        app:srcCompat="@drawable/ic_attached" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:visibility="gone"
+                android:background="@color/colorEditText" />
+
+            <RelativeLayout
+                android:id="@+id/relGstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/gst_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEditDocs"
+            android:layout_width="match_parent"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/conner_btn"
+            android:text="Edit &amp; Update"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+
+            android:layout_marginRight="@dimen/_20sdp"
+
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/text_semibold"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+</ScrollView>

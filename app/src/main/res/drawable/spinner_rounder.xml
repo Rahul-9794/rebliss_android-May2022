@@ -1,0 +1,44 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item>
+            <shape>
+
+
+
+                <shape android:shape="rectangle">
+                    <padding />
+                    <solid android:color="@color/colorWhite"></solid>
+                </shape>
+                <solid
+                    android:color="@color/colorWhite"
+
+                    >
+
+                </solid>
+
+                <stroke android:color="@color/black" android:width="2dp" android:dashWidth="2dp"></stroke>
+                <corners
+                    android:radius="@dimen/_10sdp"
+                    />
+
+                <padding
+                   android:right="@dimen/_10sdp" />
+
+            </shape>
+        </item>
+        <item >
+
+
+
+            <bitmap android:gravity="center_vertical|right"
+
+                android:src="@drawable/spinner_imageset6"
+
+
+
+                />
+
+
+        </item>
+    </layer-list></item>
+</selector>

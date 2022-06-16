@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "118132113560",
+    "project_id": "rebliss",
+    "storage_bucket": "rebliss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118132113560:android:ccfa482fae57f2bba990ed",
+        "android_client_info": {
+          "package_name": "com.rebliss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118132113560-ecm4gllvs7hnigulh0bgkb79t1193ja3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rebliss",
+            "certificate_hash": "3eccc6a7ec1b773780020f6b9f63034986a9fce8"
+          }
+        },
+        {
+          "client_id": "118132113560-kt0bs2goqmg529cc8nrlalmd3he9sdub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX0oeiTI-yff6fcXPzRQlFlL3Ee424iIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118132113560-kt0bs2goqmg529cc8nrlalmd3he9sdub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

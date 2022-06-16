@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llpersonal_profiletab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@drawable/borderwith_light_green_noradii"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/iconadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:drawableTint="@color/colorBlack" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:id="@+id/tvlabelProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTint="@color/colorBlack"
+                android:gravity="center"
+                android:text="@string/pesonal_profile"
+                android:enabled="false"
+                android:clickable="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgProfileCheck"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:src="@drawable/checked"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnNextrofile"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/borderwith_light_white_noradii"
+                android:text="@string/next"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/personal_profile_merchant" />
+
+    <LinearLayout
+        android:id="@+id/llworkprofiletab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:visibility="gone"
+        android:background="@drawable/borderwith_light_green_noradii"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/iconaddWP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:drawableTint="@color/colorBlack"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:drawableTint="@color/colorBlack"
+                android:gravity="center"
+                android:text="@string/work_profile"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgworkProfileCheck"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_toStartOf="@+id/imgCameraActivity"
+                android:src="@drawable/checked"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnsaveWorkProfile"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/borderwith_light_white_noradii"
+                android:text="@string/next"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/work_profile" />
+
+    <LinearLayout
+        android:id="@+id/llServicestab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/borderwith_light_green_noradii"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/iconaddServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:drawableTint="@color/colorBlack" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:drawableTint="@color/colorBlack"
+                android:gravity="center"
+                android:text="@string/services"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgserCheck"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_toStartOf="@+id/imgCameraActivity"
+                android:src="@drawable/checked"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnsaveServices"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/borderwith_light_white_noradii"
+                android:text="@string/next"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/services" />
+
+    <LinearLayout
+        android:id="@+id/llRefrences"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/borderwith_light_green_noradii"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/iconaddReferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:drawableTint="@color/colorBlack"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:drawableTint="@color/colorBlack"
+                android:gravity="center"
+                android:text="@string/refrences"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRefCheck"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_toStartOf="@+id/imgCameraActivity"
+                android:src="@drawable/checked"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnReference"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/borderwith_light_white_noradii"
+                android:text="@string/next"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/refrences" />
+
+    <LinearLayout
+        android:id="@+id/llAssignmentsTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/borderwith_light_green_noradii"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/iconaddAssignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:drawableTint="@color/colorBlack" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:drawableTint="@color/colorBlack"
+                android:gravity="center"
+                android:text="@string/assignment"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgAssignmentCheck"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_toStartOf="@+id/imgCameraActivity"
+                android:src="@drawable/checked"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnAssignments"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone"
+                android:background="@drawable/borderwith_light_white_noradii"
+                android:text="@string/next"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/assignments" />
+
+    <LinearLayout
+        android:id="@+id/llKycTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:visibility="gone"
+        android:background="@drawable/borderwith_light_green_noradii"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/iconKYC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:drawableTint="@color/colorBlack" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1.8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:drawableTint="@color/colorBlack"
+                android:gravity="center"
+                android:text="@string/kyc"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgKYCCheck"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_toStartOf="@+id/imgCameraActivity"
+                android:src="@drawable/checked"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnKYC"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/borderwith_grey_color"
+                android:text="@string/next"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/llSelfKYC_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.8">
+
+
+        <LinearLayout
+            android:id="@+id/llselfKYC"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/borderwithaasmani"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/iconKYCarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:drawableTint="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:drawableTint="@color/colorBlack"
+                android:gravity="center"
+                android:text="@string/self_kyc"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave_self_KYC"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/borderwith_light_green_noradii"
+            android:text="save"
+             />
+
+    </FrameLayout>
+    <include layout="@layout/kyc_merchant" />
+
+
+    <FrameLayout
+        android:id="@+id/llworkKYC_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_weight="1.8">
+
+
+        <LinearLayout
+            android:id="@+id/llworkKYC"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/borderwithaasmani"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/iconworkKYCarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:drawableTint="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:drawableTint="@color/colorBlack"
+                android:gravity="center"
+                android:text="@string/work_kyc"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave_work_KYC"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/borderwith_light_green_noradii"
+            android:text="save"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <include layout="@layout/work_kyc" />
+
+    <Button
+        android:id="@+id/btnReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector_review_btn"
+        android:text="Review and Submit"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

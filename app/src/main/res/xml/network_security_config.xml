@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">13.232.81.97</domain>
+        <domain includeSubdomains="true">rebliss.in</domain>
+        <domain includeSubdomains="true">labs.codefiretechnologies.com</domain>
+        <domain includeSubdomains="true">13.234.16.81</domain>
+        <domain includeSubdomains="true">164.52.209.160:9016</domain>
+    </domain-config>
+</network-security-config>
+
+

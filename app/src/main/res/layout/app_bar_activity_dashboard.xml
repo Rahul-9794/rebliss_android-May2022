@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ActivityDashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@drawable/tollbar_gradient"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/toolbarColor">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/home"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textColor="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/imgAdd"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/icon_notifivcation"
+                        app:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/tvNotificationCount"
+                        android:layout_width="@dimen/_15sdp"
+
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="@drawable/borderwith_red_circle"
+                        android:gravity="center"
+                        android:textSize="@dimen/_8sdp"
+                        android:text="@string/Exclamation"
+                        android:textColor="@color/color_white" />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivLogout"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_40sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_logout"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_activity_dashboard" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

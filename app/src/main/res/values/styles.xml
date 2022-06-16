@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#009292</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar." parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+
+
+    <style name="AppTheme.My_Theme." parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#009292</item>
+        <item name="android:statusBarColor">#009292</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+
+
+    <style name="AlertDialog.AppCompat.." parent="Theme.AppCompat.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ButtonColor" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/loginButton</item>
+    </style>
+    <style name="BackgroundColor" >
+        <item name="android:background">@color/full_screen_background_color</item>
+    </style>
+
+    <style name="ButtonShapeBackground" >
+        <item name="android:background">@drawable/rect_login_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonShapeBackgroundBegni" >
+        <item name="android:background">@drawable/borderwithbegni</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="toolbarColor" >
+        <item name="android:background">@color/toolbarColor</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorMegentaText</item>
+    </style>
+
+
+    <style name="RoundedButtonStyle" parent="Widget.AppCompat.TextView">
+        <item name="background">@drawable/rect_login_button</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/border_grey_corner</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    </style>
+
+</resources>

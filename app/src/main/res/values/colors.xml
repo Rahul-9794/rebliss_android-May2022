@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6FB4D1</color>
+    <color name="colorPrimaryDark">#D4EADE </color>
+    <color name="merchantBackground">#A1D5B8</color>
+    <color name="lightBack">#EFF8F3</color>
+    <color name="backgroundcolors">#eff9f3</color>
+    <color name="cardcolor">#E4F1E9</color>
+    <color name="colorControlNormal">@color/black</color>
+    <color name="toolbarColor">#ffff</color>
+    <color name="tabColor">#D4EADE</color>
+    <color name="drawabletintcolor">#000</color>
+    <color name="colorAccent">#A1D5B8</color>
+    <color name="colorMegentaText">#003700</color>
+    <color name="colorMegentaTextss">#A1D5B8</color>
+    <color name="colorLineColor">#E9E9F0</color>
+    <color name="colorLineColorNew">#a4792a90</color>
+    <color name="colorTextHint">#888888</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorsilver">#f0f0f0</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorForgotText">#43425D</color>
+    <color name="progressbar_color">#00000000</color>
+    <color name="colorSplashText">#4E4D56</color>
+    <color name="colorEditText">#A4AFB7</color>
+    <color name="colorBackground">#EFEFEF</color>
+    <color name="cardview_dark_background">#FF424242</color>
+    <color name="loginButton">#d4eade</color>
+    <color name="loginButtonText">#838383</color>
+    <color name="colorYellow">#FFC400</color>
+    <color name="colorgreen">#83EDB3</color>
+    <color name="color_light_green">#DDEDCB</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="aasmani">#003700</color>
+    <color name="link_color">#2196F3</color>
+    <color name="red">#F44336</color>
+    <color name="greycolor">#DAD8D8</color>
+    <color name="my_app_color">#FF1D5871</color>
+    <color name="full_screen_background_color">#FDE6E6E6</color>
+
+</resources>

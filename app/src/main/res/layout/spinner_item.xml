@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14dp"
+    android:textColor="@color/colorBlack"
+    android:background="@color/color_white"
+    android:padding="7dp"
+    android:singleLine="true"
+    android:fontFamily="@font/text_fontmontserrat_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:textAlignment="inherit"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

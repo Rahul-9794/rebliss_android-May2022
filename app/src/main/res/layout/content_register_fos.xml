@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.activity.RegisterFos"
+    tools:showIn="@layout/activity_register_fos">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_35sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Leb Logo-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/reb_logo" />
+                </LinearLayout>
+
+                <!--input box user name password-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_35sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etFirstNameLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etFirstName"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_34sdp"
+                                android:background="@drawable/rounded_edittext"
+                                android:inputType="textCapWords"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/colorMegentaText"
+                                android:textColorHint="@color/colorTextHint" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etLastNameLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_34sdp"
+                                android:background="@drawable/rounded_edittext"
+                                android:inputType="textCapWords"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/colorMegentaText"
+                                android:textColorHint="@color/colorTextHint" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etNumberLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_34sdp"
+                                android:background="@drawable/rounded_edittext"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:text=""
+                                android:textColor="@color/colorMegentaText"
+                                android:textColorHint="@color/colorTextHint" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etPasswordLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_34sdp"
+                                android:background="@drawable/rounded_edittext"
+                                android:inputType="textPassword"
+                                android:text=""
+                                android:textColor="@color/colorMegentaText"
+                                android:textColorHint="@color/colorTextHint" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etCPasswordLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etCPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_34sdp"
+                                android:background="@drawable/rounded_edittext"
+                                android:inputType="textPassword"
+                                android:text=""
+                                android:textColor="@color/colorMegentaText"
+                                android:textColorHint="@color/colorTextHint" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etreffLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            app:passwordToggleEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etrefferal"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_34sdp"
+                                android:background="@drawable/rounded_edittext"
+                                android:inputType="text"
+                                android:text=""
+                                android:textColor="@color/colorMegentaText"
+                                android:textColorHint="@color/colorTextHint" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btnSignup"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:background="@drawable/conner_btn"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/textLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:gravity="center"
+                            android:text="Login"
+                            android:textColor="@color/colorForgotText"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!--  bottom layout with info-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorMegentaText"
+            android:layout_height="@dimen/_35sdp">
+            <TextView android:id="@+id/textReblissInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:text="reBliss- An initiative of Kutumbh Care Group  "/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

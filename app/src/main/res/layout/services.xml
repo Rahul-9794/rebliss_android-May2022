@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/llservices"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_multiselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderwith_light_green_noradii"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="5dp">
+
+
+        <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+            android:id="@+id/spn_currentServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="gone"
+
+            app:hintText="Select Current Services" />
+
+        <TextView
+            android:id="@+id/txtcurrentservices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_5sdp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_interestedServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderwith_light_green_noradii"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="5dp">
+
+
+        <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+            android:id="@+id/spn_interestedServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            app:hintText="Select Interested Services" />
+        <TextView
+            android:id="@+id/txtInterestedservices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_5sdp"/>
+    </LinearLayout>
+</LinearLayout>

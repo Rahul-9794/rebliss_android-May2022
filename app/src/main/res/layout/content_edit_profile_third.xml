@@ -1,0 +1,1925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.activity.DashboardDocUpload"
+    tools:showIn="@layout/activity_edit_profile_third">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mywidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fadingEdge="horizontal"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text=""
+            android:textColor="#ff4500"></TextView>
+
+        <TextView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_text"
+            android:gravity="center"
+            android:text="Coming soon"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/stepsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:id="@+id/imgStepOne"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_check_mark" />
+
+                <TextView
+                    android:id="@+id/textStepOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewStepOne"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@color/colorWhite"></View>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:id="@+id/imgStepTwo"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_circular_shape_yellow"
+                    />
+
+                <TextView
+                    android:id="@+id/textStepTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="2"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewStepTwo"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@color/colorWhite"></View>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:id="@+id/imgStepThree"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_circular_shape_yellow" />
+
+                <TextView
+                    android:id="@+id/textStepThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="3"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:scrollbars="none"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_35sdp"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/textUploadOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proof of Address "
+                    android:textStyle="bold"
+                    android:fontFamily="@font/text_fontmontserrat_medium"
+                    android:textColor="@color/colorBlack" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/spUploadLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/rounded_edittext"
+
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_edittext"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/spUploadOption"
+                                android:layout_gravity="left|center"
+                                android:paddingLeft="@dimen/_15sdp"
+                                android:paddingTop="@dimen/_8sdp"
+                                android:paddingBottom="@dimen/_8sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textCPAdhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aadhar Number "
+
+                        android:fontFamily="@font/text_fontmontserrat_medium"
+                        android:textColor="@color/colorBlack" />
+
+                    <RelativeLayout
+                        android:id="@+id/add_photo_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@drawable/rounded_edittext"
+                                android:layout_height="@dimen/_35sdp">>
+
+                                <EditText
+                                    android:id="@+id/etAddhar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toLeftOf="@+id/Imattach01"
+                                    android:background="@android:color/transparent"
+                                    android:hint=""
+                                    android:inputType="number"
+
+                                    android:paddingStart="@dimen/_20sdp"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_8sdp"
+                                    android:paddingBottom="@dimen/_8sdp"
+                                    android:textColor="@color/colorMegentaText"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+                                <ImageView
+                                    android:id="@+id/Imcamera01"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+
+                                    android:layout_marginRight="@dimen/_7sdp"
+                                    app:srcCompat="@drawable/ic_photo_camera"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/Imattach01"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/Imcamera01"
+                                    app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/Imcheck01"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/Imattach01"
+                                    android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:visibility="gone"
+                                android:background="@color/colorEditText" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/click_to_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/btnUpload"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload file"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textAdharFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewAadhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/Layout_second_balls"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <RelativeLayout
+                        android:id="@+id/relAdhrLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/aadhar_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textPan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CP PAN No"
+
+                        android:fontFamily="@font/text_fontmontserrat_medium"
+                        android:textColor="@color/colorBlack" />
+
+                    <RelativeLayout
+                        android:id="@+id/add_pan_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@drawable/rounded_edittext"
+                                android:layout_height="@dimen/_35sdp">
+
+                                <EditText
+                                    android:id="@+id/etPan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_alignParentTop="true"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="left"
+                                    android:hint=""
+
+                                    android:inputType="textCapCharacters"
+                                    android:paddingStart="@dimen/_20sdp"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_8sdp"
+                                    android:paddingBottom="@dimen/_8sdp"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorMegentaText"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+                                <ImageView
+                                    android:id="@+id/Imcamera02"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_7sdp"
+                                    app:srcCompat="@drawable/ic_photo_camera">
+
+                                </ImageView>
+
+                                <ImageView
+                                    android:id="@+id/Imattach02"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_toLeftOf="@+id/Imcamera02"
+                                    app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/Imcheck02"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/Imattach02"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:visibility="gone"
+                                android:background="@color/colorEditText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/click_to_uploadPan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/btnUploadPAN"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload file"
+                                android:textAllCaps="false"
+
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textCPPANFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewPan"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_pan"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relPanLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/pan_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textGST"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:text="GST Number (Optional)"
+                        android:fontFamily="@font/text_fontmontserrat_medium"
+                        android:textColor="@color/colorBlack" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/add_firm_gst_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                >
+
+                                <EditText
+                                    android:id="@+id/etGST"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/rounded_edittext"
+                                    android:gravity="left|center"
+                                    android:hint=""
+
+                                    android:maxLength="15"
+                                    android:paddingStart="@dimen/_20sdp"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:textColor="@color/colorMegentaText"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <ImageView
+                                    android:id="@+id/Imcamera03"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_7sdp"
+                                    app:srcCompat="@drawable/ic_photo_camera">
+                                </ImageView>
+
+                                <ImageView
+                                    android:id="@+id/Imattach03"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/Imcamera03"
+                                    app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/Imcheck03"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/Imattach03"
+                                    android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/colorEditText"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/click_to_uploadGST"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/btnUploadGST"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload file"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/cloud_upload"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textGSTFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewGST"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_GST"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relGstLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/gst_photo_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textAddress"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/text_fontmontserrat_medium"
+                        android:layout_toLeftOf="@id/Imattach04"
+                        android:text="Bussiness Address Proof (Optional)"
+                        android:textColor="@color/colorBlack" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/add_firm_address_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/rounded_edittext"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/Imcamera04"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            app:srcCompat="@drawable/ic_photo_camera">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/Imattach04"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_toLeftOf="@+id/Imcamera04"
+                            app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/Imcheck04"
+                            android:layout_centerInParent="true"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_toLeftOf="@+id/Imattach04"
+                            android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/upload_done_roundcorner"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:visibility="gone">
+
+                                <EditText
+                                    android:id="@+id/etaddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center|left"
+                                    android:hint=""
+                                    android:inputType="number"
+                                    android:maxLength="16"
+
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_8sdp"
+                                    android:paddingBottom="@dimen/_8sdp"
+                                    android:textColor="@color/colorMegentaText"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/click_to_uploadaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="7"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <Button
+                                    android:id="@+id/btnUploadAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Upload file"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/_24sdp"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cloud_upload"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorEditText" />
+
+                    <TextView
+                        android:id="@+id/textaddressFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewBAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_BAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relBsnAddrLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/bsnAddr_photo_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textFirmPan"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Firm PAN "
+                        android:fontFamily="@font/text_fontmontserrat_medium"
+
+                        android:textColor="@color/colorBlack" />
+
+                    <RelativeLayout
+                        android:id="@+id/add_firm_pan_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@drawable/rounded_edittext"
+                                android:layout_height="@dimen/_35sdp">>
+
+                                <EditText
+                                    android:id="@+id/etFirmPan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_31sdp"
+                                    android:layout_toLeftOf="@+id/Imattach05"
+                                    android:background="@android:color/transparent"
+                                    android:hint=""
+
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="12"
+                                    android:paddingStart="@dimen/_20sdp"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_8sdp"
+                                    android:paddingBottom="@dimen/_8sdp"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorMegentaText"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <ImageView
+                                    android:id="@+id/Imcamera05"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_7sdp"
+                                    app:srcCompat="@drawable/ic_photo_camera">
+
+                                </ImageView>
+
+                                <ImageView
+                                    android:id="@+id/Imattach05"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/Imcamera05"
+                                    app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/Imcheck05"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/Imattach05"
+                                    android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:visibility="gone"
+                                android:background="@color/colorEditText" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@drawable/upload_done_roundcorner"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:visibility="gone">
+
+                                    <EditText
+                                        android:id="@+id/etFirmPan1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center|left"
+                                        android:hint=""
+
+                                        android:paddingLeft="@dimen/_15sdp"
+                                        android:paddingTop="@dimen/_8sdp"
+                                        android:paddingBottom="@dimen/_8sdp"
+                                        android:inputType="number"
+                                        android:maxLength="16"
+                                        android:textColor="@color/colorMegentaText"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/click_to_uploadFirmPan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:id="@+id/btnUploadFirmPan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Upload file"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:layout_gravity="center"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/cloud_upload"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textFirmFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewfirmPan"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_firmPan"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/frmPan_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liIBDACODE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textIbdaCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="IB DA Code "
+                        android:textColor="@color/colorEditText" />
+
+                    <RelativeLayout
+                        android:id="@+id/add_IbdaCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp">>
+
+                                <EditText
+                                    android:id="@+id/etIbdaCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_31sdp"
+                                    android:layout_toLeftOf="@+id/ImattachIbdaCode"
+                                    android:background="@android:color/transparent"
+                                    android:hint="DA0001234567"
+
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_8sdp"
+                                    android:paddingBottom="@dimen/_8sdp"
+                                    android:textColor="@color/colorMegentaText"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+                                <ImageView
+                                    android:id="@+id/ImcameraIbdaCode"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentRight="true"
+                                    app:srcCompat="@drawable/ic_photo_camera"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/ImattachIbdaCode"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/ImcameraIbdaCode"
+                                    app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/ImcheckIbdaCode"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/ImattachIbdaCode"
+                                    android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:visibility="gone"
+                                android:background="@color/colorEditText" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/click_to_uploadIbdaCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/btnUploadIbdaCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload file"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textIbdaCodee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewIDBA"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_IDBA"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relIbdaCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/IbdaCode_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+
+
+                        <TextView
+                            android:id="@+id/textCheque"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/text_fontmontserrat_medium"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Bank proof "
+
+                            android:textColor="@color/colorBlack" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/add_firm_cheque_layout"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/rounded_edittext"
+                            android:layout_height="@dimen/_35sdp"
+                            >
+
+
+                            <ImageView
+                                android:id="@+id/Imcamera06"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/_7sdp"
+                                app:srcCompat="@drawable/ic_photo_camera">
+
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/Imattach06"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_toLeftOf="@+id/Imcamera06"
+                                app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/Imcheck06"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_toLeftOf="@+id/Imattach06"
+                                android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@drawable/upload_done_roundcorner"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:visibility="gone">
+
+                                    <EditText
+                                        android:id="@+id/etcheque"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center|left"
+                                        android:hint=""
+
+                                        android:paddingLeft="@dimen/_15sdp"
+                                        android:paddingTop="@dimen/_8sdp"
+                                        android:paddingBottom="@dimen/_8sdp"
+                                        android:inputType="number"
+                                        android:maxLength="16"
+                                        android:textColor="@color/colorMegentaText"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/click_to_uploadcheque"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:id="@+id/btnUploadCheque"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Upload file"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:layout_gravity="center"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/cloud_upload"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorEditText" />
+
+                    <TextView
+                        android:id="@+id/textCHequeFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewCheque"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_Cheque"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relCheqlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/cnclChq_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/textPassport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/text_fontmontserrat_medium"
+                            android:text="Passport size photo *"
+                            android:textColor="@color/colorBlack" />
+
+                        <RelativeLayout
+                            android:id="@+id/add_Passport"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/rounded_edittext"
+
+                            >
+
+
+                            <ImageView
+                                android:id="@+id/Imcamera07"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_7sdp"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/ic_photo_camera">
+                                android:scaleType="fitXY"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/Imattach07"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_toLeftOf="@+id/Imcamera07"
+                                app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/Imcheck07"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_toLeftOf="@+id/Imattach07"
+                                android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@drawable/upload_done_roundcorner"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:visibility="gone">
+
+                                    <EditText
+                                        android:id="@+id/etSignedForm"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center|left"
+                                        android:hint=""
+
+                                        android:paddingLeft="@dimen/_15sdp"
+                                        android:paddingTop="@dimen/_8sdp"
+                                        android:paddingBottom="@dimen/_8sdp"
+                                        android:inputType="number"
+                                        android:maxLength="16"
+                                        android:textColor="@color/colorMegentaText"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/click_to_uploadPassport"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:id="@+id/btnUploadPassport"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Upload file"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:layout_gravity="center"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/cloud_upload"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorEditText" />
+
+                    <TextView
+                        android:id="@+id/textPassportFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewPhotoPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_photoPass"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relPassportLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/pssprt_photo_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/textSignedForm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/text_fontmontserrat_medium"
+                            android:text="Upload signed form "
+                            android:textColor="@color/colorBlack" />
+
+                        <RelativeLayout
+                            android:id="@+id/add_firm_SignedForm"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/rounded_edittext"
+                            android:layout_height="@dimen/_35sdp"
+
+
+                            >
+
+
+                            <ImageView
+                                android:id="@+id/Imcamera08"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_7sdp"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/ic_photo_camera"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/Imattach08"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_toLeftOf="@+id/Imcamera08"
+                                app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/Imcheck08"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_toLeftOf="@+id/Imattach08"
+
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@drawable/upload_done_roundcorner"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:visibility="gone">
+
+                                    <EditText
+                                        android:id="@+id/etPassport"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center|left"
+                                        android:hint=""
+
+                                        android:paddingLeft="@dimen/_15sdp"
+                                        android:paddingTop="@dimen/_8sdp"
+                                        android:paddingBottom="@dimen/_8sdp"
+                                        android:inputType="number"
+                                        android:maxLength="16"
+                                        android:textColor="@color/colorMegentaText"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/click_to_uploadSignedForm"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:id="@+id/btnUploadSignedForm"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Upload file"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:layout_gravity="center"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/cloud_upload"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorEditText" />
+
+                    <TextView
+                        android:id="@+id/textSignedFormFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewSignedForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_SignedForm"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relSignedLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/upldsgn_photo_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linShopPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textshopPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:text="Upload shop photo *"
+                            android:fontFamily="@font/text_fontmontserrat_medium"
+                            android:textColor="@color/colorBlack" />
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/add_firm_shopPhoto"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/rounded_edittext"
+                            android:layout_height="@dimen/_35sdp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Imcamera09"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/_7sdp"
+                                app:srcCompat="@drawable/ic_photo_camera">
+                                android:scaleType="fitXY"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/Imattach09"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_toLeftOf="@+id/Imcamera09"
+                                app:srcCompat="@drawable/ic_attached"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/Imcheck09"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_toLeftOf="@+id/Imattach09"
+                                android:src="@drawable/ic_check_mark_green"></ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@drawable/upload_done_roundcorner"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:visibility="gone">
+
+                                    <EditText
+                                        android:id="@+id/etshopPhoto"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center|left"
+                                        android:hint=""
+
+                                        android:paddingLeft="@dimen/_15sdp"
+                                        android:paddingTop="@dimen/_8sdp"
+                                        android:paddingBottom="@dimen/_8sdp"
+                                        android:inputType="number"
+                                        android:maxLength="16"
+                                        android:textColor="@color/colorMegentaText"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/click_to_uploadshopPhoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/btnUploadshopPhoto"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Upload file"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:layout_gravity="center"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/cloud_upload"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="gone"
+                        android:background="@color/colorEditText" />
+
+                    <TextView
+                        android:id="@+id/textshopPhotoFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/_8sdp"
+                        android:visibility="gone" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollViewShopPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_ShopPhoto"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relShopLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/upldshop_photo_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/conner_btn"
+                        android:text="Save &amp; Continue"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:fontFamily="@font/text_semibold"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
